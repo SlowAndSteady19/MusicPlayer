@@ -1,0 +1,70 @@
+.player-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  color: #fff;
+  background: linear-gradient(#000, #1a1a1a);
+  min-height: 100vh;
+  position: relative;
+}
+
+.disk {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #fff;
+  margin-bottom: 20px;
+}
+
+.rotate {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.like-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hearts {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  animation: floatUp 1.5s ease-in-out;
+  font-size: 20px;
+}
+
+@keyframes floatUp {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-100px); }
+}
+
+.lyrics {
+  margin-top: 30px;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.play-btn {
+  position: fixed;
+  bottom: 40px;
+  background: #1db954;
+  color: white;
+  border: none;
+  font-size: 25px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.songs-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 35px;
+    margin-top: 90px;
+    margin-left: -100px;
+}
+
+.song-card{
+    background-color: #1a3045;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(230, 230, 235, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.song-card:hover{
+    transform: scale(1.1);
+}
+
+.song-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.song-card h4{
+    margin: 10px 0 5px;
+    font-size:16px;
+}
+
+.song-card audio{
+    width: 100%;
+    margin-top: 10px;
+}
+
