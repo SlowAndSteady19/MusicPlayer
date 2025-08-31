@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
-function SideBar() {
+function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
@@ -48,4 +48,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default Sidebar;
